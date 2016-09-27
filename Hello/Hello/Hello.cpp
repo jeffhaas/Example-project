@@ -4,11 +4,21 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
+
+extern "C" {
+#include <libavcodec\avcodec.h>
+#include <libavformat\avformat.h>
+}
+
+#pragma comment(lib, "avcodec.lib")
+
 using namespace std;
 
 
 int main()
 {
+	av_register_all();
+
 	string s;
 	cout << "Hello, World\n";
 	

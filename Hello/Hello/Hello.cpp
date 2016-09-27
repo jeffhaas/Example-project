@@ -10,7 +10,16 @@ using namespace std;
 int main()
 {
 	string s;
-	cout << "Hello, World\n\nEnter anything to exit> ";
+	cout << "Hello, World\n";
+	
+	for (int i = 0; i < 10; i++) {
+
+		cout << "There are " << i << " lights.\n";
+
+	}
+		
+		
+	cout << "\nEnter anything to exit > ";
 	cin >> s;
     return 0;
 }
